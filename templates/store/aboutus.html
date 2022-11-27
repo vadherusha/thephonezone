@@ -1,0 +1,189 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block content %}
+    
+    <div class="container">
+        <!-- HERO SECTION-->
+        <section class="py-5 bg-light">
+          <div class="container">
+            <div class="row px-4 px-lg-5 py-lg-4 align-items-center">
+              <div class="col-lg-6">
+                <h1 class="h2 text-uppercase mb-5">About Us</h1>
+                <form action="/store/checkout/" method="post">{% csrf_token %}
+                  
+                   
+                </div>
+              </div>
+              <header class="text-center">
+                <h1 class="h5 text-uppercase mb-5"><span class="font-weight-bold text-uppercase text-info">ABOUT THE MOBILE STORE ONLINE</span></h1>
+              </header>
+           
+        <p>"Web store" redirects here. For the W3C storage standard, see Web storage.</p>
+        <p>The Mobile Store is a successful and growing business at the heart of the mobile phone sector which serves diverse customers through our retail.</p>
+        <p>Mobile Store Online offers the lowest price phone repairs and best deals on smartphones, tablets, computers, consoles and accessories.</p>
+        <p>Mobile Store’s success to date has mainly been built on our dedication to providing excellent customer service, treating each customer as special and going the extra mile, whenever necessary, to find the right products and services.</p>
+        <p>The Mobile Store has also developed a range of complimentary business-to-business services, including:
+          • website design and software development,<br>
+          • the development of phone apps for business<br>
+          • marketing, e-marketing, social media strategy and digital marketing support<br>
+          • financial consultation and support for franchising, business acquisition, report writing and financial planning</p>
+         <p>The Mobile Store works with all the main network providers and brands right across the industry sector. One of our four current retail outlets is a Samsung official service centre.</p>
+         <section class="hero pb-3 bg-cover bg-center d-flex align-items-center" style="background: url({% static 'img/about.png' %})"></section><br>
+        <header class="text-center">        
+        <h1 class="h5 text-uppercase mb-5"><span class="font-weight-bold text-uppercase text-info">MobileShop</span></h1></br>
+        </header>
+        <p>MobileShop gives you a chance to quickly and easily find the device you want and have it delivered to your home in no time, regardless of your location, as long as it is in one of the countries.</p>
+        <h3>BEGINNING</h3>
+         <p>MobileShop website was launched in 2022, but its story actually began some 8 years before that when a group of college friends decided to go into business together. We started selling phones in shops, but our combined ambition, drive and abilities soon made us look for new challenges and new markets. Starting an online shop provided for both and allowed us to develop a strong international presence in a number of countries.
+         <h3>TODAY</h3>
+        <p>Mobileshop.eu is today an e-commerce platform which enables third party sellers to sell their products to customers using the platform. Collective experience of our team members and the years we have spent in the business allowed us to develop a vast network of partners, ensuring that our customers will always find what they are looking for. This also means that we are able to offer great prices, which are constantly being updated and follow the shifts in the market.</p>
+        <section class="hero pb-3 bg-cover bg-center d-flex align-items-center" style="background: url({% static 'img/business.png' %})"></section><br>
+        
+  </div><br><br>
+  <header class="text-center">
+    <h1 class="h5 text-uppercase mb-5"><span class="font-weight-bold text-uppercase text-info">Our Team 👩‍💻 And Their Details </span></h1>
+  </header><br>
+  <div class="wrapper">
+    <div class="team">
+      <div class="team_member">
+        <div class="team_img">
+          <img src="https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/09/04184424/How-to-Become-a-Software-Engineer.jpg" alt="Project_partner👩‍💻" >
+        </div>
+        <h3>Usha Vadher 👩‍💻</h3>
+        <p class="role">UI / UI  developer + Tester </p>
+        <p>Game Developer,UX Designer, Backend Developer, Wordpress Website Developer, Basic Knowlage Of Programing Languages</p>
+      </div>
+      <div class="team_member">
+        <div class="team_img">
+          <img src="https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/09/04184424/How-to-Become-a-Software-Engineer.jpg" alt="Project_partner👩‍💻" >
+        </div>
+        <h3>Sudha Khoraba 👩‍💻</h3>
+        <p class="role">UI/UX Designer</p>
+        <p>UI Designer,Word Website Developer,Bootstrap Master,Fronted Developer,Basic Knowlage of css,html</p></div>
+      <div class="team_member">
+        <div class="team_img">
+          <img src="https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/09/04184424/How-to-Become-a-Software-Engineer.jpg" alt="Project_partner👩‍💻" >
+        </div>
+        
+        <h3>Rutu Parmar 👩‍💻</h3>
+        <p class="role">UI/UX Designer</p>
+        <p>Iphone Software Designer, UI Designer , Fronted Developer,Basic Knowlage Of Css,Html and Php,Wordpress Website Developer </p>
+      </div>
+    </div>
+  </div>	
+  <style>
+    .team{
+      display: flex;
+      justify-content: center;
+      width: auto;
+      text-align: center;
+      flex-wrap: wrap;
+    }
+    
+    .team .team_member{
+      background: #fff;
+      margin: 5px;
+      margin-bottom: 50px;
+      width: 300px;
+      padding: 20px;
+      line-height: 20px;
+      color: #8e8b8b;  
+      position: relative;
+    }
+    
+    .team .team_member h3{
+      color: #5db8ec;
+      font-size: 26px;
+      margin-top: 50px;
+    }
+    
+    .team .team_member p.role{
+      color: rgb(223, 236, 34);
+      margin: 12px 0;
+      font-size: 15px;
+      text-transform: uppercase;
+    }
+    
+    .team .team_member .team_img{
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: #fff;
+    }
+    
+    .team .team_member .team_img img{
+      width: 100px;
+      height: 100px;
+      padding: 5px;
+    }
+  </style>
+        <!-- SERVICES-->
+        <div class="border-top pt-3" style="border-color: #1d1d1d !important">
+          <section class="py-5 bg-light">
+            <div class="container">
+              <div class="row text-center">
+                <div class="col-lg-4 mb-3 mb-lg-0">
+                  <div class="d-inline-block">
+                    <span class="font-weight-bold text-uppercase text-info">
+                    <div class="media align-items-end">
+                      <svg class="svg-icon svg-icon-big svg-icon-light">
+                        <use xlink:href="#delivery-time-1"> </use></span>
+                      </svg>
+                      <div class="media-body text-left ml-3">
+                        <h6 class="text-uppercase mb-1"><span class="font-weight-bold text-uppercase text-info">Free shipping</span></h6>
+                      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-3 mb-lg-0">
+                  <div class="d-inline-block"><span class="font-weight-bold text-uppercase text-info">
+                    <div class="media align-items-end">
+                      <svg class="svg-icon svg-icon-big svg-icon-light">
+                        <use xlink:href="#helpline-24h-1"> </use></span>
+                      </svg>
+                      <div class="media-body text-left ml-3">
+                        <h6 class="text-uppercase mb-1"><span class="font-weight-bold text-uppercase text-info">24 x 7 service</span></h6>
+                      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="d-inline-block"><span class="font-weight-bold text-uppercase text-info">
+                    <div class="media align-items-end">
+                      <svg class="svg-icon svg-icon-big svg-icon-light">
+                        <use xlink:href="#label-tag-1"> </use></span>
+                      </svg>
+                      <div class="media-body text-left ml-3">
+                        <h6 class="text-uppercase mb-1"><span class="font-weight-bold text-uppercase text-info">Festival offer</span></h6>
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="border-top pt-3" style="border-color: #1d1d1d !important">
+          </div>
+  
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    {% endblock content %}
